@@ -380,7 +380,6 @@ h2.profession {
 }
 
 /* ABOUT */
-
 .certificate-comming-soom{
   color: #9b9999;
 }
@@ -871,7 +870,7 @@ h2.profession {
   .row-competence {
     display: inline-block;
   }
-  
+
   .competence .competence-item {
     flex: 0 0 50%;
     max-width: 100%;
@@ -908,6 +907,9 @@ h2.profession {
   .contact .contact-form .col-6 {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .section.open {
+    left: 0px;
   }
 }
 
