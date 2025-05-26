@@ -827,6 +827,7 @@ h2.profession {
 }
 
 @media (max-width: 1199px) {
+
   .aside {
     left: -270px;
   }
@@ -867,6 +868,15 @@ h2.profession {
 }
 
 @media (max-width: 991px) {
+  .row-competence {
+    display: inline-block;
+  }
+  
+  .competence .competence-item {
+    flex: 0 0 50%;
+    max-width: 100%;
+  }
+  
   .home .home-info {
     flex: 0 0 100%;
     max-width: 100%;
