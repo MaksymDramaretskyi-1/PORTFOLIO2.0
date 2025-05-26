@@ -715,17 +715,17 @@ h2.profession {
 
 .text-container {
   background-color: #222222;
-  padding: 100px;
-  width: 60%;
+  padding: 40px;
   border-radius: 10px;
 }
 
 .text-container p {
+  font-family: "Preahvihear", sans-serif;
   color: #ffffff;
 }
 
 .text-container a {
-  color: #ffffff;
+  color: var(--skin-color);
   text-decoration: underline;
 }
 
