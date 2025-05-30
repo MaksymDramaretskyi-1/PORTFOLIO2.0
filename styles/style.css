@@ -147,7 +147,7 @@ body {
   color: white;
   border-radius: 40px;
   display: inline-block;
-  border: none;
+  border: 2px solid var(--skin-color);
   white-space: nowrap;
   background: var(--skin-color);
   transition: all 0.3s ease;
@@ -155,6 +155,8 @@ body {
 
 .btn:hover {
   transform: scale(1.05);
+  border: 2px solid var(--skin-color);
+  background-color: var(--skin-color);
 }
 
 .shadow-dark {
@@ -762,11 +764,10 @@ h2.profession {
   color: var(--skin-color);
 }
 
-.contact .contact-info-item h4 {
+.contact .contact-info-item h4, a {
   font-size: 18px;
   font-weight: 700;
   color: var(--text-black900);
-  text-transform: capitalize;
   margin: 15px 0 5px;
 }
 
@@ -777,10 +778,38 @@ h2.profession {
   font-weight: 400;
 }
 
+.contact .contact-info-item .icon a{
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--text-black700);
+  font-weight: 400;
+}
+
+.link-git-hub {
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--text-black700);
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.link-git-hub:hover {
+  text-decoration: none;
+  color: var(--skin-color);
+  background-color: var(--skin-color);
+  padding: 4px;
+  border-radius: 12px;
+}
+
 .contact .contact-form {
   flex: 0 0 100%;
   max-width: 100%;
 }
+
+.icon svg {
+  fill: var(--skin-color);
+}
+
 
 .contact .contact-form .col-6 {
   flex: 0 0 50%;

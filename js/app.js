@@ -30,11 +30,11 @@ window.addEventListener('load', () => {
 })
 
 /* Typing Animation */
-var typed = new Typed('.typing', { 
-  strings: ["", "I'm a Beginner Frontend Developer", " I understand basic UI/UX design...", "I'm a Motion Designr"],
-  typeSpeed: 100,
+let typed = new Typed('.typing', { 
+  strings: ["", "I'm a Beginner Frontend Developer","Html, Css, JavaScript", " I understand basic UI/UX design...", "I'm a Motion Designer"],
+  typeSpeed: 80,
   BackSpeed: 60,
-  loop: true 
+  loop: true
 });
 
 /* Changing Aside Active Link */
@@ -57,13 +57,16 @@ for(let i = 0; i < totalNavList; i++) {
     this.classList.add('active');
     showSection(this);
 
-    if(window.innerWidth < 1200) { asideSectionTogglerBtn(); }
-  })
+    if(window.innerWidth < 1200) {
+      asideSectionTogglerBtn();
+    }
+  });
 }
 
 
-
-function addBackSection(num) { allSection[num].classList.add('back-section'); }
+function addBackSection(num) { 
+  allSection[num].classList.add('back-section'); 
+}
 
 function removeBackSection(){
   for( let i = 0; i < totalSection; i++){ allSection[i].classList.remove('back-section'); }
@@ -106,4 +109,25 @@ function asideSectionTogglerBtn(){
   for(let i = 0; i < totalSection; i++) { allSection[i].classList.toggle('open');
 
   }
+}
+
+
+function downloadFiles() {
+  // File1 — CV
+  event.preventDefault();
+
+  const link1 = document.createElement('a');
+  link1.href = '/public/CV_Intern_MaksymDramaretskyi.pdf';
+  link1.download = 'CV_Intern_MaksymDramaretskyi.pdf';
+  document.body.appendChild(link1);
+  link1.click();
+  document.body.removeChild(link1);
+
+  // File 2 — CV
+  const link2 = document.createElement('a');
+  link2.href = '/public/Søknad_MaksymDramaretskyi.pdf';
+  link2.download = 'Søknad_MaksymDramaretskyi.pdf';
+  document.body.appendChild(link2);
+  link2.click();
+  document.body.removeChild(link2);
 }
