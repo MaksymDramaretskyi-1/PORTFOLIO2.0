@@ -1,4 +1,4 @@
-'use strict'
+// 'use strict'
 
 /* Toggle Style Switcher */
 
