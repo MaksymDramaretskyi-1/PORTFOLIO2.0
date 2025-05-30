@@ -112,7 +112,7 @@ function asideSectionTogglerBtn(){
 }
 
 
-function downloadFiles() {
+function downloadFiles(event) {
   // File1 — CV
   event.preventDefault();
 
