@@ -112,22 +112,22 @@ function asideSectionTogglerBtn(){
 }
 
 
-function downloadFiles(event) {
-  // File1 — CV
-  event.preventDefault();
+// function downloadFiles(event) {
+//   // File1 — CV
+//   event.preventDefault();
 
-  const link1 = document.createElement('a');
-  link1.href = 'https://github.com/MaksymDramaretskyi-1/PORTFOLIO2.0/blob/main/public/CV_Intern_MaksymDramaretskyi.pdf';
-  link1.download = 'CV_Intern_MaksymDramaretskyi.pdf';
-  document.body.appendChild(link1);
-  link1.click();
-  document.body.removeChild(link1);
+//   const link1 = document.createElement('a');
+//   link1.href = '/CV_Intern_MaksymDramaretskyi.pdf';
+//   link1.download = 'CV_Intern_MaksymDramaretskyi.pdf';
+//   document.body.appendChild(link1);
+//   link1.click();
+//   document.body.removeChild(link1);
 
-  // File 2 — CV
-  const link2 = document.createElement('a');
-  link2.href = 'https://github.com/MaksymDramaretskyi-1/PORTFOLIO2.0/blob/main/public/S%C3%B8knad_MaksymDramaretskyi.pdf';
-  link2.download = 'Søknad_MaksymDramaretskyi.pdf';
-  document.body.appendChild(link2);
-  link2.click();
-  document.body.removeChild(link2);
-}
+//   // File 2 — CV
+//   const link2 = document.createElement('a');
+//   link2.href = '/Søknad_MaksymDramaretskyi.pdf';
+//   link2.download = 'Søknad_MaksymDramaretskyi.pdf';
+//   document.body.appendChild(link2);
+//   link2.click();
+//   document.body.removeChild(link2);
+// }
