@@ -96,8 +96,8 @@ document.querySelector('.hire-me').addEventListener('click', function(){
   addBackSection(sectionIndex);
 })
 
-/* Activating Mobile Menu */
 
+/* Activating Mobile Menu */
 const navTogglerBtn = document.querySelector('.nav-toggler');
 const aside = document.querySelector('.aside');
 
@@ -112,7 +112,7 @@ function asideSectionTogglerBtn(){
 }
 
 
-function downloadFiles(event) {
+function downloadFiles() {
   // File1 — CV
   event.preventDefault();
 
