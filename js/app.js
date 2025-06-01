@@ -117,7 +117,7 @@ function downloadFiles() {
   event.preventDefault();
 
   const link1 = document.createElement('a');
-  link1.href = './CV_Intern_MaksymDramaretskyi.pdf';
+  link1.href = '../public/CV_Intern_MaksymDramaretskyi.pdf';
   link1.download = 'CV_Intern_MaksymDramaretskyi.pdf';
   document.body.appendChild(link1);
   link1.click();
@@ -125,7 +125,7 @@ function downloadFiles() {
 
   // File 2 — CV
   const link2 = document.createElement('a');
-  link2.href = './Søknad_MaksymDramaretskyi.pdf';
+  link2.href = '../public/Søknad_MaksymDramaretskyi.pdf';
   link2.download = 'Søknad_MaksymDramaretskyi.pdf';
   document.body.appendChild(link2);
   link2.click();
