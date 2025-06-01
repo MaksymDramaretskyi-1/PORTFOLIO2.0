@@ -645,7 +645,6 @@ h2.profession {
   text-transform: capitalize;
 }
 
-
 .row-competence {
   display: flex;
   flex-wrap: wrap;
@@ -731,6 +730,25 @@ h2.profession {
   text-decoration: underline;
 }
 
+.icon-behance {
+  width: 100px;
+  height: 100px;
+}
+
+.text-container-behance {
+  display: flex;
+  align-items: end;
+}
+
+.text-container-behance p {
+  margin-bottom: 10px;
+}
+.text-container-behance p:hover {
+  color: var(--skin-color);
+}
+/* .block-media-links {
+  text-align: center;
+} */
 
 
 /* CONTACT */
@@ -738,7 +756,7 @@ h2.profession {
   color: var(--skin-color);
   text-align: center;
   font-size: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .contact-subtitle {
