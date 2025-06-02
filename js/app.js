@@ -111,9 +111,7 @@ function asideSectionTogglerBtn(){
   }
 }
 
-
 function downloadFiles() {
-  // File1 — CV
   event.preventDefault();
 
   const link1 = document.createElement('a');
@@ -123,11 +121,13 @@ function downloadFiles() {
   link1.click();
   document.body.removeChild(link1);
 
-  // File 2 — CV
-  const link2 = document.createElement('a');
-  link2.href = 'Søknad_MaksymDramaretskyi.pdf';
-  link2.download = 'Søknad_MaksymDramaretskyi.pdf';
-  document.body.appendChild(link2);
-  link2.click();
-  document.body.removeChild(link2);
+  setTimeout(() => {
+    const link2 = document.createElement('a');
+    link2.href = 'Søknad_MaksymDramaretskyi.pdf';
+    link2.download = 'Søknad_MaksymDramaretskyi.pdf';
+    document.body.appendChild(link2);
+    link2.click();
+    document.body.removeChild(link2);
+  }, 100); // 100ms
 }
+
